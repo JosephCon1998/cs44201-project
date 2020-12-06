@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.1.9/lib/p5.min.js"></script>
+    <link rel="stylesheet" href="index.css" />
+    <meta charset="utf-8" />
+  </head>
+
+  <body>
+    <div class="info">
+      <h3>Minimax Tic-Tac-Toe w/ Alpha Beta Pruning</h3>
+      <p>
+        To start, click on any square to go first, or click the button below to
+        have the AI go first
+      </p>
+      <button onclick="bestMove()">Have AI go first</button>
+      <p>Enter the max depth minimax will go:</p>
+      <input type="number" id="depth" name="depth" min="1" max="5" value="3" />
+
+      <p>Click below to restart</p>
+      <button onclick="location.reload()">Restart the game</button>
+    </div>
+  </body>
+  <script src="/js/minimax.js"></script>
+  <script src="/js/board.js"></script>
+</html>

@@ -1,0 +1,25 @@
+/*
+  index.css
+
+  styling for the game
+
+*/
+
+.info {
+  background-color: antiquewhite;
+  min-height: 100px;
+  width: 400px;
+  box-sizing: border-box;
+  padding: 0 10px 10px;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(85, 150, 203);
+}
