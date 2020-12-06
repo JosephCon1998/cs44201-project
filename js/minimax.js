@@ -10,9 +10,9 @@
  * Lookup table for each
  * winning scenario: X wins, O wins, or tie
  */
-let winner = {
-  X: 1,
-  O: -1,
+let scores = {
+  X: 10,
+  O: -10,
   tie: 0,
 };
 
@@ -51,7 +51,7 @@ function minimax(board, depth, isMaximizing, alpha, beta) {
    */
   let result = checkWinner();
   if (result !== null) {
-    return winner[result];
+    return scores[result];
   }
 
   /**
